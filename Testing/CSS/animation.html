@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            animation-name: uma;
+            animation-duration: 5s;
+            animation-iteration-count: infinte;
+            /* animation-iteration-count: infinite;
+            animation: delay 2s; */
+            animation-timing-function: linear;
+        }
+        .box1{
+            animation-timing-function: ease-in;
+        }
+        /* @keyframes uma{
+            from{ */
+                /* width: 200px; */
+                /* height: 200px;
+                background-color: pink;
+                transform: translatex(400px);
+            }
+            to{
+                width:300px;
+                height: 300px;
+                background-color: lightcoral;
+
+            }
+        } */
+
+        @keyframes uma{
+            0%{
+                width: 200px;
+                height: 200px;
+                background-color: lightcoral;
+            }
+            50%{
+                border-radius: 50%;
+            }
+            100%{
+                background-color: blue;
+                transform:translatex(400px);
+            }
+            }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box box1"></div>
+    
+</body>
+</html>
